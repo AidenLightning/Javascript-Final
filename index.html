@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightning Music Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logotxt">🎸 Lightning Music Store ⚡</div>
+        </div>
+        <nav class="barra">
+            <ul>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+        <div class="menu">
+            <ul>
+                <input type="checkbox" id="burger-shower" class="burger-shower">
+                <label for="burger-shower" class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="burger-menu">
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </ul>
+        </div>
+    </header>
+
+    <div class="call">
+        <div class="mainimg"></div>
+        <div class="jumbotron p-5 bg-secondary text-white rounded">
+            <h1>Lighting Store</h1>
+            <br>
+            <p>Bienvenido a esta tienda de musica, aqui encontraras tus amplificadores e intrumentos boutique favoritos.</p>
+        </div>
+    </div>
+
+    <h2 class="titles">Productos</h2>
+
+    <section class="container-fluid">
+        <div class="productos row" id="misproducts">
+            <!--Aqui Productos-->
+        </div>
+    </section>
+
+    <div>
+        <h2 class="titles">Tu carrito:</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody id="tablabody">
+                <!-- Aqui Carrito -->
+            </tbody>
+        </table>
+        <div class="total">
+            <h4 id="total">Total a pagar $:</h4>
+        </div>
+        <div class="Pagabutton">
+            <div id = "compraB" class="reset btn btn-primary">Finalizar Compra</div>
+            <div id = "resetB" class="reset btn btn-primary">Borrar Carrito</div>
+        </div>
+    </div>
+
+    <h2 class="titles">Tipo de Cambio Dolar a MXN</h2>
+    <div class="cambioDolar" id="cambioDolar">
+        <br>
+                <!-- Aqui API Cambio de Dolar -->
+    </div>
+
+    <h2 class="titles"><hr style="height: 28px"></h2>
+    
+    <div class="call">
+        <div class="bbimg"></div>
+        <div class="frase1">
+            <br>
+            <h4>⚡Lighting Music Store agradece siempre tu preferencia, nunca olvides seguir tus sueños ⚡</h4>
+            <div id="frasebb" class="frase2">
+                <!-- Aqui API frase BB -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="productos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

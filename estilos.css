@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ce900a, #c7c7c7);
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 5px #000;
+}
+.barra {
+    padding-top: 35px;
+    padding-right: 25px;
+}
+.barra li {
+    display: inline;
+    list-style: none;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+.barra a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.logo {
+    display: inline-flex;
+    font-size: 35px;
+    padding: 27px;
+    padding-left: 50px;
+    padding-top: 32px;
+    text-align: center;
+}
+nav {
+    display: none;
+}
+
+.fa-bars {
+    padding: 35px;
+    margin-right: 20px;
+}
+.fa-bars:hover {
+    color: rgb(205, 143, 50);
+}
+.menu ul {
+    list-style: none;
+}
+.menu a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 1px 1px 5px #000;
+}
+.menu a:hover {
+    color: rgb(205, 143, 50);
+}
+.menu ul ul {
+    text-align: center;
+    position: absolute;
+    top: 90px;
+    right: 10px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    padding: 10px;
+}
+.menu ul ul li {
+    padding: 10px;
+}
+.burger-shower {
+    display: none;
+}
+.burger-shower:checked ~ .burger-menu {
+    display: block;
+}
+.hamburger {
+    display: block;
+}
+.burger-menu {
+    display: none;
+}
+.call{
+    display: flex;
+    padding-top: 5px;
+    text-shadow: 1px 1px 5px #000;
+    text-align: center;
+}
+.mainimg{
+    background-image: url(./media/StackOAmps.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    min-height: 350px;
+    margin-right: 2.5px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.jumbotron{
+    width: 50%;
+    margin-left: 2.5px;
+    margin-right: 5px;
+}
+.jumbotron h1{
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.titles{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 3px #000;
+    padding-left: 20px;
+    background: linear-gradient(to right, #be902c, #c7c7c7);
+}
+.btn-primary{
+    background-color: rgb(230, 167, 31);
+    border-color: rgb(255, 209, 81);
+    }
+.btn-primary:hover{
+    background-color: rgb(172, 26, 26);
+    border-color: red;
+}
+.Pagabutton{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.total h4{
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+.reset{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.cambioDolar{
+    margin-left: 20px;
+}
+.bbimg{
+    margin-left: 25px;
+    background-image: url(./media/logo.png);
+    max-width: 200px;
+    max-height: 200px;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+.frase1{
+    padding-left: 90px;
+    padding-right: 90px;
+    text-shadow: none;
+}
+.frase2{
+    padding-top: 50px;
+}
+@media only screen and (min-width: 100px) and (max-width: 490px) {
+    .logo {
+        display: inline-flex;
+        font-size: 35px;
+        padding: 0px;
+        padding-left: 24px;
+        padding-top: 32px;
+        text-align: center;
+    }
+    .logotxt{
+        font-size: 48%;
+    }
+    .fa-bars {
+        padding: 35px;
+        margin-right: 0px;
+    }
+    .fa-bars{
+        font-size: 70%;
+    }
+    .menu{
+        font-size: 70%;
+    }
+    .jumbotron{
+        font-size: 65%;
+    }
+    .jumbotron h1{
+        font-size: 20px;
+        padding: 0;
+    }
+}
+@media only screen and (min-width: 490px) and (max-width: 800px) {
+    .logotxt{
+        font-size: 60%;
+    }
+    .fa-bars{
+        font-size: 80%;
+    }
+    .menu{
+        font-size: 80%;
+    }
+    .jumbotron{
+        font-size: 75%;
+    }
+    .jumbotron h1{
+        font-size: 20px;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    nav {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+}
